@@ -1,0 +1,201 @@
+/* main container */
+.contactus{
+    width: 100%;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 5rem;
+    padding: 3rem 5rem;
+}
+
+/* subtitle and text on top of the component */
+.getintouch{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4vw;
+}
+
+/* subtitle */
+.getintouch h3{
+    max-width: 700px;
+    font-family: var(--font-title);
+    font-size: clamp(1.5rem, -1.0714rem + 2.8571vw, 2.5rem);
+    line-height: 1em;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(203, 111, 234, 1) 0%, rgba(255, 219, 242, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* text */
+.getintouch p{
+    max-width: 350px;
+    font-family: var(--font-text);
+    font-size: clamp(1rem, 0.7429rem + 0.2857vw, 1.1rem);
+    text-align: right;
+    color: #c5c4c4;
+}
+
+
+/* main title */
+.contactus h2{
+    width: 100%;
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -0.5714rem + 2.8571vw, 3rem);
+    font-weight: 500;
+    color: #ffdbf2;
+    padding-left: 4vw;
+}
+
+
+/* form/container */
+.contactus form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* input containers */
+form div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* label */
+form div label{
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* input */
+form div input{
+    font-family: var(--font-text);
+    color: #fff;
+    width: 300px;
+    background: transparent;
+    border: none;
+    border-bottom: #ffdbf2 1px solid;
+    padding: 0.7rem;
+}
+
+/* hide arrows on input telephone */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* submit button */
+form .btn {
+    margin-top: 2rem;
+    padding: 0.7rem 3rem;
+}
+
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .contactus{
+        padding: 3rem;
+    }
+
+    .contactus h2{
+        padding-left: 0;
+    }
+
+    .getintouch{
+        padding: 1rem 0;
+    }
+
+    .getintouch h3{
+        max-width: 450px;
+    }
+
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+    
+    .contactus{
+        padding: 3rem 1.5rem;
+    }
+
+    .getintouch{
+        padding: 1rem 0;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+    .contactus{
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .getintouch{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .getintouch h3{
+        padding: 1rem 1.5rem;
+        max-width: 100%;
+        font-size: clamp(1.5rem, 0.6667rem + 2.7778vw, 2rem);
+        text-align: center;
+    }
+
+    .getintouch p{
+        max-width: 100%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* form/container */
+    .contactus form{
+        gap: 2rem;
+    }
+
+    /* input containers */
+    form div{
+        gap: 1rem;
+    }
+
+    /* label */
+    form div label{
+        font-size: 1rem;
+    }
+
+    /* input */
+    form div input{
+        width: 250px;
+        padding: 0.5rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    
+    /* form/container */
+    .contactus form{
+        width: 100%;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,40 @@
+#root {
+
+  /*fonts var*/
+  --font-title: "Konkhmer Sleokchher", system-ui;
+  --font-text: "Inter", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body{
+  background: #1f1f25;
+}
+
+.btn{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-text);
+  font-size: clamp(1.1rem, 0.5857rem + 0.5714vw, 1.3rem);
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(90deg, rgba(255, 219, 242, 1) 0%, rgba(203, 111, 234, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #ffdbf2;
+  padding: 0.8rem 2.5rem;
+}
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+  .btn{
+    font-size: 0.9rem;
+  }
+}
+

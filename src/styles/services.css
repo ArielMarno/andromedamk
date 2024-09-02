@@ -1,0 +1,224 @@
+/* main container */
+.services{
+    width: 100%;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 3rem 5rem;
+}
+
+/* main title */
+.services h2{
+    width: 100%;
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -0.5714rem + 2.8571vw, 3rem);
+    font-weight: 500;
+    color: #ffdbf2;
+    padding-left: 4vw;
+}
+
+/* services container */
+.services__list{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    gap: 1rem;
+    padding-right: 4vw;
+}
+
+/* service container */
+.services__list .item{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ffdbf2 1px solid;
+    padding: 0.5rem 0;
+}
+
+/* service title */
+.item h3{
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: clamp(1.5rem, -1.0714rem + 2.8571vw, 2.5rem);
+    color: #fff;
+}
+
+
+/* service text */
+.item p{
+    width: 260px;
+    font-family: var(--font-text);
+    font-size: clamp(1rem, 0.7429rem + 0.2857vw, 1.1rem);
+    color: #c5c4c4;
+}
+
+/*services button*/
+.services__list a{
+    margin-top: 2.5rem;
+    
+}
+
+/* bottom content container*/
+.about__portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 4vw;
+}
+
+/* buttom title*/
+.about__portfolio h3{
+    max-width: 700px;
+    font-family: var(--font-title);
+    font-size: clamp(1.5rem, -1.0714rem + 2.8571vw, 2.5rem);
+    line-height: 1em;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(203, 111, 234, 1) 0%, rgba(255, 219, 242, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* buttom text */
+.about__portfolio p{
+    max-width: 500px;
+    font-family: var(--font-text);
+    font-size: clamp(1rem, 0.7429rem + 0.2857vw, 1.1rem);
+    text-align: right;
+    color: #c5c4c4;
+}
+
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+    
+    /* main container */
+    .services{
+        padding: 3rem;
+    }
+
+    .services h2{
+        padding-left: 0;
+    }
+
+    .services__list{
+        padding-right: 0;
+    }
+
+    .services__list .item{
+        max-width: 800px;
+    }
+
+    .item p{
+        max-width: 240px;
+    }
+
+    .about__portfolio{
+        padding: 3rem 0;
+    }
+
+    .about__portfolio h3{
+        max-width: 450px;
+    }
+    
+    .about__portfolio p{
+        max-width: 420px;
+        font-size: 0.9rem;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /* main container */
+    .services{
+        padding: 3rem 1.5rem;
+    }
+
+    .services__list .item{
+        max-width: 700px;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+    /* main container */
+    .services{
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+
+    .services__list{
+        width: 100%;
+        justify-self: flex-start;
+    }
+
+    .services__list .item{
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item h3{
+        font-size: 1.5rem;
+    }
+
+    .item p{
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .about__portfolio{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    .about__portfolio h3{
+        padding: 1rem 1.5rem;
+        max-width: 100%;
+        font-size: clamp(1.5rem, 0.6667rem + 2.7778vw, 2rem);
+        text-align: center;
+    }
+
+    .about__portfolio p{
+        max-width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    
+    .item h3{
+        font-size: 1.3rem;
+    }
+
+    .item p{
+        font-size: 1.2rem;
+    }
+
+    .about__portfolio p{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+}
+
+/*
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
