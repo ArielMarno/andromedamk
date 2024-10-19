@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
     align-items: flex-start;
     justify-items: center;
-    background-image: url("src/assets/hombg.webp");
+    background-image: url("/hombg.webp");
     background-position: center;
     background-size: cover;
 }
